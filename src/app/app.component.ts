@@ -5,8 +5,8 @@ import {Component} from '@angular/core';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  n: number = 0;
-  food: string = 'apple';
+  n = 0;
+  food = 'apple';
 
   increment(_event: MouseEvent) {
     this.n++;
