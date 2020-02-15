@@ -16,5 +16,6 @@ export class AppComponent {
     if (this.n > 1 && this.n < 5) {
       return this.n;
     }
+    return undefined;
   }
 }
