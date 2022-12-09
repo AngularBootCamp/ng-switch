@@ -1,6 +1,5 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "defaultProject": "ng-switch",
   "newProjectRoot": "projects",
   "projects": {
     "ng-switch": {
