@@ -8,7 +8,7 @@ export class AppComponent {
   n = 0;
   food = 'apple';
 
-  increment(_event: MouseEvent) {
+  increment() {
     this.n++;
   }
 
