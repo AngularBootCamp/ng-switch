@@ -1,15 +1,9 @@
-import {
-  NgSwitch,
-  NgSwitchCase,
-  NgSwitchDefault
-} from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  standalone: true,
-  imports: [NgSwitch, NgSwitchCase, NgSwitchDefault]
+  standalone: true
 })
 export class AppComponent {
   n = 0;

@@ -5,24 +5,48 @@
 
 <article>
   <header>ngSwitch: on values</header>
-  <div [ngSwitch]="n > 5">
-    <span *ngSwitchCase="false">Seen a little</span>
-    <span *ngSwitchCase="true">Seen a lot.</span>
+  <div>
+    @switch (n > 5) {
+      @case (false) {
+        <span>Seen a little</span>
+      }
+      @case (true) {
+        <span>Seen a lot.</span>
+      }
+    }
   </div>
 </article>
 
 <article>
   <header>ngSwitch: on predicates</header>
-  <div [ngSwitch]="n">
-    <div *ngSwitchCase="0">Seen zero</div>
-    <div *ngSwitchCase="1">Seen once</div>
-    <div *ngSwitchCase="results()">2...4</div>
-    <div *ngSwitchDefault>Seen {{ n }} times</div>
+  <div>
+    @switch (n) {
+      @case (0) {
+        <div>Seen zero</div>
+      }
+      @case (1) {
+        <div>Seen once</div>
+      }
+      @case (results()) {
+        <div>2...4</div>
+      }
+      @default {
+        <div>Seen {{ n }} times</div>
+      }
+    }
   </div>
 
-  <div [ngSwitch]="food">
-    <span *ngSwitchCase="'apple'">Shiny Apple</span>
-    <span *ngSwitchCase="'banana'">Yellow Banana</span>
-    <span *ngSwitchDefault>other</span>
+  <div>
+    @switch (food) {
+      @case ('apple') {
+        <span>Shiny Apple</span>
+      }
+      @case ('banana') {
+        <span>Yellow Banana</span>
+      }
+      @default {
+        <span>other</span>
+      }
+    }
   </div>
 </article>
